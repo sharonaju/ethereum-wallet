@@ -21,6 +21,12 @@
 		80C26B1D2BB1F9F9007413DC /* APIManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B1C2BB1F9F9007413DC /* APIManagerTest.swift */; };
 		80C26B1F2BB1FC97007413DC /* WalletBalanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B1E2BB1FC97007413DC /* WalletBalanceResponse.swift */; };
 		80C26B212BB2001E007413DC /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B202BB2001E007413DC /* String+Extension.swift */; };
+		80C26B2A2BB20F14007413DC /* WalletPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B242BB20F14007413DC /* WalletPresenter.swift */; };
+		80C26B2B2BB20F14007413DC /* WalletWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B252BB20F14007413DC /* WalletWorker.swift */; };
+		80C26B2C2BB20F14007413DC /* WalletRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B262BB20F14007413DC /* WalletRouter.swift */; };
+		80C26B2D2BB20F14007413DC /* WalletModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B272BB20F14007413DC /* WalletModels.swift */; };
+		80C26B2E2BB20F14007413DC /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B282BB20F14007413DC /* WalletViewController.swift */; };
+		80C26B2F2BB20F14007413DC /* WalletInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B292BB20F14007413DC /* WalletInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,12 @@
 		80C26B1C2BB1F9F9007413DC /* APIManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTest.swift; sourceTree = "<group>"; };
 		80C26B1E2BB1FC97007413DC /* WalletBalanceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletBalanceResponse.swift; sourceTree = "<group>"; };
 		80C26B202BB2001E007413DC /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		80C26B242BB20F14007413DC /* WalletPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPresenter.swift; sourceTree = "<group>"; };
+		80C26B252BB20F14007413DC /* WalletWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletWorker.swift; sourceTree = "<group>"; };
+		80C26B262BB20F14007413DC /* WalletRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRouter.swift; sourceTree = "<group>"; };
+		80C26B272BB20F14007413DC /* WalletModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModels.swift; sourceTree = "<group>"; };
+		80C26B282BB20F14007413DC /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		80C26B292BB20F14007413DC /* WalletInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,7 @@
 		80C26AE52BB1D996007413DC /* EthereumWallet */ = {
 			isa = PBXGroup;
 			children = (
+				80C26B232BB20EFD007413DC /* Scenes */,
 				80C26B222BB20022007413DC /* Extension */,
 				80C26B192BB1F91C007413DC /* APIServices */,
 				80C26AE62BB1D996007413DC /* AppDelegate.swift */,
@@ -156,6 +169,19 @@
 				80C26B202BB2001E007413DC /* String+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		80C26B232BB20EFD007413DC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				80C26B242BB20F14007413DC /* WalletPresenter.swift */,
+				80C26B252BB20F14007413DC /* WalletWorker.swift */,
+				80C26B262BB20F14007413DC /* WalletRouter.swift */,
+				80C26B272BB20F14007413DC /* WalletModels.swift */,
+				80C26B282BB20F14007413DC /* WalletViewController.swift */,
+				80C26B292BB20F14007413DC /* WalletInteractor.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,13 +315,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C26B2D2BB20F14007413DC /* WalletModels.swift in Sources */,
 				80C26B1F2BB1FC97007413DC /* WalletBalanceResponse.swift in Sources */,
+				80C26B2A2BB20F14007413DC /* WalletPresenter.swift in Sources */,
 				80C26B212BB2001E007413DC /* String+Extension.swift in Sources */,
 				80C26AEB2BB1D996007413DC /* ViewController.swift in Sources */,
+				80C26B2E2BB20F14007413DC /* WalletViewController.swift in Sources */,
 				80C26AE72BB1D996007413DC /* AppDelegate.swift in Sources */,
 				80C26B1B2BB1F99B007413DC /* APIManager.swift in Sources */,
+				80C26B2B2BB20F14007413DC /* WalletWorker.swift in Sources */,
 				80C26AE92BB1D996007413DC /* SceneDelegate.swift in Sources */,
 				80C26AF12BB1D996007413DC /* EthereumWallet.xcdatamodeld in Sources */,
+				80C26B2C2BB20F14007413DC /* WalletRouter.swift in Sources */,
+				80C26B2F2BB20F14007413DC /* WalletInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
