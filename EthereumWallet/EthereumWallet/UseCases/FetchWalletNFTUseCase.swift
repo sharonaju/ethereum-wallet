@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 class FetchWalletNFTsUseCase {
     
     var walletAddress = ""
@@ -49,28 +47,5 @@ class FetchWalletNFTsUseCase {
         }
         return nftsArray.compactMap { NFT(dictionary: $0) }
     }
-    
-//    private func parseNFTs(_ response: Any) -> [NFT]? {
-//        guard let responseDict = response as? [String: Any],
-//              let nftsArray = responseDict["ownedNfts"] as? [String: Any] else {
-//            return nil
-//        }
-//        return nftsArray.compactMap { NFT(dictionary: $0) }
-//    }
-//    private func parseNFTs(_ response: Any) {
-//        if let responseDict = response as? [String: Any] {
-//            let ownedNFTs = responseDict["ownedNfts"] as? [String: Any]
-//            let nftArray = ownedNFTs?.compactMap { NFT(dictionary: $0 as [String : Any]) }
-//            print(nftArray)
-//        }
-//        guard let responseDict = response as? [String: Any] {
-//
-//        }
-//              let nftsArray = responseDict["ownedNfts"] as? [NFT] else {
-//            return
-////            return nil
-//        }
-//        print(nftsArray.first)
-//        return nftsArray.compactMap { NFT(dictionary: $0) }
-//    }
+
 }

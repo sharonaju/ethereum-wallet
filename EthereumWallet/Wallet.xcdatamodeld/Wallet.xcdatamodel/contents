@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22A400" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="WalletDetails" representedClassName="WalletDetails" syncable="YES" codeGenerationType="class">
+        <attribute name="transactionCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="walletAddress" optional="YES" attributeType="String"/>
+        <attribute name="walletBalance" optional="YES" attributeType="String"/>
+        <relationship name="nfts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WalletNFT" inverseName="wallet" inverseEntity="WalletNFT"/>
+    </entity>
+    <entity name="WalletNFT" representedClassName="WalletNFT" syncable="YES" codeGenerationType="class">
+        <attribute name="contractAddress" optional="YES" attributeType="String"/>
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="tokenId" optional="YES" attributeType="String"/>
+        <attribute name="tokenUri" optional="YES" attributeType="String"/>
+        <relationship name="wallet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WalletDetails" inverseName="nfts" inverseEntity="WalletDetails"/>
+    </entity>
+</model>

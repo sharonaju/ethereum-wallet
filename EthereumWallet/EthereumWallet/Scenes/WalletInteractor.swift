@@ -82,15 +82,25 @@ class WalletInteractor: WalletBusinessLogic, WalletDataStore
         }
         
         group.notify(queue: .main) { [weak self] in
+            self?.saveToCoreData(details: viewModel)
             self?.presenter?.presentWalletDetails(response: viewModel)
         }
         
     }
     
     func fetchCachedData(address: String) {
+        if let cacheData = FetchFromCacheUseCase().fetchWalletDetails() {
+            self.presenter?.presentWalletDetails(response: cacheData)
+        }
         
     }
     
+    func saveToCoreData(details: Wallet.Response) {
+        SaveToCacheUseCase().saveWalletDetails(response: details)
+    }
     
+    deinit {
+        NetworkManager.shared.stopMonitoring()
+    }
     
 }
