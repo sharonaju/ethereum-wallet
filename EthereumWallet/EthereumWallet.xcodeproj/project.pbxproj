@@ -41,6 +41,11 @@
 		80E450AA2BB32A20007EC9D2 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450A82BB32A20007EC9D2 /* DetailsTableViewCell.swift */; };
 		80E450AB2BB32A20007EC9D2 /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E450A92BB32A20007EC9D2 /* DetailsTableViewCell.xib */; };
 		80E450AD2BB334E5007EC9D2 /* ActivityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450AC2BB334E5007EC9D2 /* ActivityLoader.swift */; };
+		80E450B02BB3522A007EC9D2 /* NFTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450AE2BB3522A007EC9D2 /* NFTTableViewCell.swift */; };
+		80E450B12BB3522A007EC9D2 /* NFTTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E450AF2BB3522A007EC9D2 /* NFTTableViewCell.xib */; };
+		80E450B52BB3531C007EC9D2 /* NFTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450B32BB3531C007EC9D2 /* NFTCollectionViewCell.swift */; };
+		80E450B62BB3531C007EC9D2 /* NFTCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E450B42BB3531C007EC9D2 /* NFTCollectionViewCell.xib */; };
+		80E450B82BB35BD9007EC9D2 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450B72BB35BD9007EC9D2 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +104,11 @@
 		80E450A82BB32A20007EC9D2 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		80E450A92BB32A20007EC9D2 /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTableViewCell.xib; sourceTree = "<group>"; };
 		80E450AC2BB334E5007EC9D2 /* ActivityLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLoader.swift; sourceTree = "<group>"; };
+		80E450AE2BB3522A007EC9D2 /* NFTTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTTableViewCell.swift; sourceTree = "<group>"; };
+		80E450AF2BB3522A007EC9D2 /* NFTTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NFTTableViewCell.xib; sourceTree = "<group>"; };
+		80E450B32BB3531C007EC9D2 /* NFTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTCollectionViewCell.swift; sourceTree = "<group>"; };
+		80E450B42BB3531C007EC9D2 /* NFTCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NFTCollectionViewCell.xib; sourceTree = "<group>"; };
+		80E450B72BB35BD9007EC9D2 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +211,7 @@
 		80C26B232BB20EFD007413DC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				80E450B22BB35305007EC9D2 /* CollectionViewCells */,
 				80E4509E2BB32771007EC9D2 /* TableViewCells */,
 				80C26B242BB20F14007413DC /* WalletPresenter.swift */,
 				80C26B262BB20F14007413DC /* WalletRouter.swift */,
@@ -237,6 +248,8 @@
 			children = (
 				80E450A82BB32A20007EC9D2 /* DetailsTableViewCell.swift */,
 				80E450A92BB32A20007EC9D2 /* DetailsTableViewCell.xib */,
+				80E450AE2BB3522A007EC9D2 /* NFTTableViewCell.swift */,
+				80E450AF2BB3522A007EC9D2 /* NFTTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -246,8 +259,18 @@
 			children = (
 				80E450A42BB327C6007EC9D2 /* UITableView+Extension.swift */,
 				80E450A62BB3295A007EC9D2 /* UITableViewCell+Extension.swift */,
+				80E450B72BB35BD9007EC9D2 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		80E450B22BB35305007EC9D2 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				80E450B32BB3531C007EC9D2 /* NFTCollectionViewCell.swift */,
+				80E450B42BB3531C007EC9D2 /* NFTCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,8 +377,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E450B12BB3522A007EC9D2 /* NFTTableViewCell.xib in Resources */,
 				80C26AF62BB1D996007413DC /* LaunchScreen.storyboard in Resources */,
 				80C26AF32BB1D996007413DC /* Assets.xcassets in Resources */,
+				80E450B62BB3531C007EC9D2 /* NFTCollectionViewCell.xib in Resources */,
 				80E450AB2BB32A20007EC9D2 /* DetailsTableViewCell.xib in Resources */,
 				80C26AEE2BB1D996007413DC /* Main.storyboard in Resources */,
 			);
@@ -384,6 +409,7 @@
 			files = (
 				80C26B2D2BB20F14007413DC /* WalletModels.swift in Sources */,
 				80C26B1F2BB1FC97007413DC /* WalletBalanceResponse.swift in Sources */,
+				80E450B82BB35BD9007EC9D2 /* UIImageView+Extension.swift in Sources */,
 				80E450992BB31E7F007EC9D2 /* CustomColor.swift in Sources */,
 				80C26B2A2BB20F14007413DC /* WalletPresenter.swift in Sources */,
 				80E4509B2BB31FBC007EC9D2 /* CustomFont.swift in Sources */,
@@ -394,6 +420,7 @@
 				80C26AE72BB1D996007413DC /* AppDelegate.swift in Sources */,
 				80C26B1B2BB1F99B007413DC /* APIManager.swift in Sources */,
 				80E450A52BB327C6007EC9D2 /* UITableView+Extension.swift in Sources */,
+				80E450B02BB3522A007EC9D2 /* NFTTableViewCell.swift in Sources */,
 				80E4509D2BB32316007EC9D2 /* CustomLabel.swift in Sources */,
 				80C26AE92BB1D996007413DC /* SceneDelegate.swift in Sources */,
 				80C26AF12BB1D996007413DC /* EthereumWallet.xcdatamodeld in Sources */,
@@ -403,6 +430,7 @@
 				80E450AD2BB334E5007EC9D2 /* ActivityLoader.swift in Sources */,
 				80E450862BB303F9007EC9D2 /* FetchWalletBalanceUseCase.swift in Sources */,
 				80E450A72BB3295A007EC9D2 /* UITableViewCell+Extension.swift in Sources */,
+				80E450B52BB3531C007EC9D2 /* NFTCollectionViewCell.swift in Sources */,
 				80C26B2F2BB20F14007413DC /* WalletInteractor.swift in Sources */,
 				80E4508E2BB306FB007EC9D2 /* MockAPIManager.swift in Sources */,
 			);

@@ -68,10 +68,38 @@ class APIManager {
             }
         }.resume()
     }
+    
+    
+    func callAlchemyAPINFT(url: URL, completion: @escaping (Result<Any, Error>) -> Void) {
+            var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            
+            URLSession.shared.dataTask(with: request) { (data, response, error) in
+                DispatchQueue.main.async {
+                    guard error == nil else {
+                        completion(.failure(error!))
+                        return
+                    }
+                    
+                    guard let data = data else {
+                        completion(.failure(APIError.invalidData))
+                        return
+                    }
+                    
+                    guard let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
+                        completion(.failure(APIError.invalidResponse))
+                        return
+                    }
+
+                    completion(.success(json))
+                }
+            }.resume()
+        }
 
 
     func constructURL(endpoint: String, queryParams: [String: String] = [:]) -> URL? {
-           var components = URLComponents(string: alchemyBaseUrl + endpoint)
+           var components = URLComponents(string: alchemyBaseUrl + alchemyApiKey + "/" + endpoint + "/")
            var queryItems = [URLQueryItem]()
            for (key, value) in queryParams {
                queryItems.append(URLQueryItem(name: key, value: value))

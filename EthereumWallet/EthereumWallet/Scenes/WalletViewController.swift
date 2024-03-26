@@ -73,6 +73,11 @@ class WalletViewController: UIViewController, WalletDisplayLogic
                     cell.data = model
                     return cell
                 }
+            case let model as NFTTableViewCell.Presentable:
+                if let cell = tableView.dequeueCell(withType: NFTTableViewCell.self, for: indexPath) as? NFTTableViewCell {
+                    cell.data = model
+                    return cell
+                }
                 
             default: return UITableViewCell()
             }
@@ -101,6 +106,7 @@ class WalletViewController: UIViewController, WalletDisplayLogic
     }
     func registerTableView() {
         tableView.registerCell(type: DetailsTableViewCell.self)
+        tableView.registerCell(type: NFTTableViewCell.self)
     }
     
     // MARK: DisplayLogic

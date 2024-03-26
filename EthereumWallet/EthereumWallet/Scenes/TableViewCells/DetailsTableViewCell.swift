@@ -26,6 +26,7 @@ class DetailsTableViewCell: UITableViewCell {
             loadData()
         }
     }
+   static let reuseIdentifier = "DetailsTableViewCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()
