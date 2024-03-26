@@ -40,6 +40,7 @@
 		80E450A72BB3295A007EC9D2 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450A62BB3295A007EC9D2 /* UITableViewCell+Extension.swift */; };
 		80E450AA2BB32A20007EC9D2 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450A82BB32A20007EC9D2 /* DetailsTableViewCell.swift */; };
 		80E450AB2BB32A20007EC9D2 /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E450A92BB32A20007EC9D2 /* DetailsTableViewCell.xib */; };
+		80E450AD2BB334E5007EC9D2 /* ActivityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450AC2BB334E5007EC9D2 /* ActivityLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		80E450A62BB3295A007EC9D2 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		80E450A82BB32A20007EC9D2 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		80E450A92BB32A20007EC9D2 /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTableViewCell.xib; sourceTree = "<group>"; };
+		80E450AC2BB334E5007EC9D2 /* ActivityLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 				80E450982BB31E7F007EC9D2 /* CustomColor.swift */,
 				80E4509A2BB31FBC007EC9D2 /* CustomFont.swift */,
 				80E4509C2BB32316007EC9D2 /* CustomLabel.swift */,
+				80E450AC2BB334E5007EC9D2 /* ActivityLoader.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				80C26B2C2BB20F14007413DC /* WalletRouter.swift in Sources */,
 				80E450AA2BB32A20007EC9D2 /* DetailsTableViewCell.swift in Sources */,
 				80E450942BB316F4007EC9D2 /* NFT.swift in Sources */,
+				80E450AD2BB334E5007EC9D2 /* ActivityLoader.swift in Sources */,
 				80E450862BB303F9007EC9D2 /* FetchWalletBalanceUseCase.swift in Sources */,
 				80E450A72BB3295A007EC9D2 /* UITableViewCell+Extension.swift in Sources */,
 				80C26B2F2BB20F14007413DC /* WalletInteractor.swift in Sources */,

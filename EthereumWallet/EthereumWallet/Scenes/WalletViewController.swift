@@ -87,7 +87,7 @@ class WalletViewController: UIViewController, WalletDisplayLogic
         super.viewDidLoad()
         registerTableView()
         setupUI()
-        interactor?.fetchWalletDetails(address: "0xd8da6bf26964af9d7eed9e03e53415d37aa96045")
+        loadData()
     }
   
 
@@ -95,6 +95,10 @@ class WalletViewController: UIViewController, WalletDisplayLogic
         self.view.backgroundColor = CustomColor.backgroundBlack.instance
     }
     
+    func loadData() {
+        ActivityLoader.shared.showActivityIndicator(in: self.view)
+        interactor?.fetchWalletDetails(address: "0xd8da6bf26964af9d7eed9e03e53415d37aa96045")
+    }
     func registerTableView() {
         tableView.registerCell(type: DetailsTableViewCell.self)
     }
@@ -102,5 +106,6 @@ class WalletViewController: UIViewController, WalletDisplayLogic
     // MARK: DisplayLogic
     func displayWalletDetails(_ snapShot: NSDiffableDataSourceSnapshot<Wallet.ViewControllerSection, AnyHashable>) {
         tableViewDataSource.apply(snapShot)
+        ActivityLoader.shared.hideActivityIndicator()
     }
 }
