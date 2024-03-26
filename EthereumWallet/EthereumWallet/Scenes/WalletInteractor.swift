@@ -32,32 +32,7 @@ class WalletInteractor: WalletBusinessLogic, WalletDataStore
     
     func fetchWalletDetails() {
         
-        worker.fetchTransactionsCount(walletAddress: "0xd8da6bf26964af9d7eed9e03e53415d37aa96045") { result in
-            switch result {
-            case .success(let success):
-                print("transactioncount === \(success)")
-            case .failure(let failure):
-                print(failure)
-            }
-        }
         
-        worker.fetchWalletBalance(walletAddress: "0xd8da6bf26964af9d7eed9e03e53415d37aa96045") { result in
-            switch result {
-            case .success(let success):
-                print(success)
-            case .failure(let failure):
-                print(failure)
-            }
-        }
-        
-        worker.fetchWalletAddress { result in
-            switch result {
-            case .success(let success):
-                print(success)
-            case .failure(let failure):
-                print(failure)
-            }
-        }
     }
     
   

@@ -69,6 +69,7 @@ class WalletViewController: UIViewController, WalletDisplayLogic
   {
     super.viewDidLoad()
       interactor?.fetchWalletDetails()
+      Utility.logAllAvailableFonts()
   }
   
 
