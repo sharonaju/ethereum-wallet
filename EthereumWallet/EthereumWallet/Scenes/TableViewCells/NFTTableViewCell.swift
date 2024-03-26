@@ -65,8 +65,8 @@ class NFTTableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectio
     // MARK: - UICollectionViewDelegateFlowLayout
 
     func collectionView(_: UICollectionView, layout _: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (self.contentView.frame.size.width - 48)/4
-        let size = CGSize(width: width, height: width)
+        let width = (self.contentView.frame.size.width - 100)/2
+        let size = CGSize(width: width, height: width + 80)
         return size
     }
     

@@ -36,11 +36,17 @@ class NFTCollectionViewCell: UICollectionViewCell {
     func setupUI() {
         nftImageView.layer.cornerRadius = 4
         titleLabel.style = .textPrimaryRegular18
+        nftImageView.backgroundColor = CustomColor.backgroundBlack.instance
     }
     
     func loadData() {
         titleLabel.text = data?.title
-        nftImageView.loadImage(from: data?.imageURL ?? "")
+        if let imageUrlString = data?.imageURL,
+           let encodedUrlString = imageUrlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed){
+            nftImageView.loadImage(from: encodedUrlString)
+        } else {
+            print("Invalid URL")
+        }
     }
 
 }

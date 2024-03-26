@@ -14,6 +14,7 @@ import UIKit
 
 protocol WalletBusinessLogic
 {
+    func startNetworkMonitring()
     func fetchWalletDetails(address: String)
 }
 
@@ -27,8 +28,19 @@ class WalletInteractor: WalletBusinessLogic, WalletDataStore
     var presenter: WalletPresentationLogic?
     let apiManager = APIManager.shared
     
-    
+    func startNetworkMonitring() {
+        NetworkManager.shared.startMonitoring()
+    }
     func fetchWalletDetails(address: String) {
+        if NetworkManager.shared.monitor.currentPath.status == .satisfied{
+            fetchWalletDetailsFromServer(address: address)
+        } else {
+            fetchCachedData(address: address)
+        }
+        
+    }
+    
+    func fetchWalletDetailsFromServer(address: String) {
         var viewModel = Wallet.Response()
         viewModel.walletAddress = address
         let group = DispatchGroup()
@@ -75,7 +87,9 @@ class WalletInteractor: WalletBusinessLogic, WalletDataStore
         
     }
     
-    
+    func fetchCachedData(address: String) {
+        
+    }
     
     
     

@@ -90,6 +90,7 @@ class WalletViewController: UIViewController, WalletDisplayLogic
   override func viewDidLoad()
     {
         super.viewDidLoad()
+        interactor?.startNetworkMonitring()
         registerTableView()
         setupUI()
         loadData()
@@ -102,7 +103,7 @@ class WalletViewController: UIViewController, WalletDisplayLogic
     
     func loadData() {
         ActivityLoader.shared.showActivityIndicator(in: self.view)
-        interactor?.fetchWalletDetails(address: "0xd8da6bf26964af9d7eed9e03e53415d37aa96045")
+        interactor?.fetchWalletDetails(address: "0x95222290DD7278Aa3Ddd389Cc1E1d165CC4BAfe5")
     }
     func registerTableView() {
         tableView.registerCell(type: DetailsTableViewCell.self)

@@ -39,7 +39,8 @@ class WalletPresenter: WalletPresentationLogic
     private func prepareNFTModels(nfts: [NFT]) -> NFTTableViewCell.Presentable{
         var nftPresentable = [NFTCollectionViewCell.Presentable]()
         for item in nfts {
-            let model = NFTCollectionViewCell.Presentable(imageURL: item.imageUrl, title: item.title)
+            let imageURL = item.metadata?["image"] as? String
+            let model = NFTCollectionViewCell.Presentable(imageURL: imageURL, title: item.title)
             nftPresentable.append(model)
         }
         let nftCellModel = NFTTableViewCell.Presentable(nfts: nftPresentable)
