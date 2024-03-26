@@ -14,13 +14,23 @@ import UIKit
 
 protocol WalletPresentationLogic
 {
+    func presentWalletDetails(response: Wallet.Response)
 }
 
 class WalletPresenter: WalletPresentationLogic
 {
   weak var viewController: WalletDisplayLogic?
   
-  // MARK: Do something
+    func presentWalletDetails(response: Wallet.Response) {
+        var snapShot = NSDiffableDataSourceSnapshot<Wallet.ViewControllerSection, AnyHashable>()
+        snapShot.appendSections([.details])
+        let addressModel = DetailsTableViewCell.Presentable(title: "Wallet Address", description: response.walletAddress)
+        let balanceModel = DetailsTableViewCell.Presentable(title: "Balance", description: response.walletBalance)
+        let transactions = "\(response.transacrtionCount ?? 0)"
+        let transactionsCount = DetailsTableViewCell.Presentable(title: "Total Transactions", description: transactions)
+        snapShot.appendItems([addressModel, balanceModel, transactionsCount])
+        viewController?.displayWalletDetails(snapShot)
+    }
   
  
 }

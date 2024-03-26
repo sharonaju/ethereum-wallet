@@ -18,8 +18,15 @@ enum Wallet
   
     struct Response
     {
+        var walletAddress: String?
         var walletBalance: String?
         var transacrtionCount: Int?
+        var nfts: [NFT]?
         
+    }
+    
+    enum ViewControllerSection: Hashable {
+        case details
+        case NFTs
     }
 }

@@ -14,6 +14,7 @@ import UIKit
 
 protocol WalletDisplayLogic: AnyObject
 {
+    func displayWalletDetails(_ snapShot: NSDiffableDataSourceSnapshot<Wallet.ViewControllerSection, AnyHashable>)
 }
 
 class WalletViewController: UIViewController, WalletDisplayLogic
@@ -22,7 +23,8 @@ class WalletViewController: UIViewController, WalletDisplayLogic
   var router: (NSObjectProtocol & WalletRoutingLogic & WalletDataPassing)?
 
   // MARK: Object lifecycle
-  
+    @IBOutlet weak var tableView: UITableView!
+    
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
   {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -63,14 +65,42 @@ class WalletViewController: UIViewController, WalletDisplayLogic
     }
   }
   
-  // MARK: View lifecycle
-  
+    private lazy var tableViewDataSource: UITableViewDiffableDataSource<Wallet.ViewControllerSection, AnyHashable> = {
+        let dataSource = UITableViewDiffableDataSource<Wallet.ViewControllerSection, AnyHashable>(tableView: tableView) { tableView, indexPath, model in
+            switch model {
+            case let model as DetailsTableViewCell.Presentable:
+                if let cell = tableView.dequeueCell(withType: DetailsTableViewCell.self, for: indexPath) as? DetailsTableViewCell {
+                    cell.data = model
+                    return cell
+                }
+                
+            default: return UITableViewCell()
+            }
+            return UITableViewCell()
+        }
+        return dataSource
+    }()
+    
+    // MARK: UIViewControllerLifeCycle
   override func viewDidLoad()
-  {
-    super.viewDidLoad()
-      interactor?.fetchWalletDetails()
-      Utility.logAllAvailableFonts()
-  }
+    {
+        super.viewDidLoad()
+        registerTableView()
+        setupUI()
+        interactor?.fetchWalletDetails(address: "0xd8da6bf26964af9d7eed9e03e53415d37aa96045")
+    }
   
 
+    func setupUI() {
+        self.view.backgroundColor = CustomColor.backgroundBlack.instance
+    }
+    
+    func registerTableView() {
+        tableView.registerCell(type: DetailsTableViewCell.self)
+    }
+    
+    // MARK: DisplayLogic
+    func displayWalletDetails(_ snapShot: NSDiffableDataSourceSnapshot<Wallet.ViewControllerSection, AnyHashable>) {
+        tableViewDataSource.apply(snapShot)
+    }
 }
