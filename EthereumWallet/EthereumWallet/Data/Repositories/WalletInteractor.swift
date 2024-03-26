@@ -26,7 +26,7 @@ protocol WalletDataStore
 class WalletInteractor: WalletBusinessLogic, WalletDataStore
 {
     var presenter: WalletPresentationLogic?
-    let apiManager = APIManager.shared
+    var apiManager = APIManager.shared
     
     func startNetworkMonitring() {
         NetworkManager.shared.startMonitoring()

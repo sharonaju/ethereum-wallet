@@ -19,7 +19,6 @@
 		80C26B0D2BB1D996007413DC /* EthereumWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B0C2BB1D996007413DC /* EthereumWalletUITestsLaunchTests.swift */; };
 		80C26B1B2BB1F99B007413DC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B1A2BB1F99B007413DC /* APIManager.swift */; };
 		80C26B1D2BB1F9F9007413DC /* APIManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B1C2BB1F9F9007413DC /* APIManagerTest.swift */; };
-		80C26B1F2BB1FC97007413DC /* WalletBalanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B1E2BB1FC97007413DC /* WalletBalanceResponse.swift */; };
 		80C26B2A2BB20F14007413DC /* WalletPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B242BB20F14007413DC /* WalletPresenter.swift */; };
 		80C26B2C2BB20F14007413DC /* WalletRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B262BB20F14007413DC /* WalletRouter.swift */; };
 		80C26B2D2BB20F14007413DC /* WalletModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B272BB20F14007413DC /* WalletModels.swift */; };
@@ -51,6 +50,7 @@
 		80E450BF2BB36F04007EC9D2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450BE2BB36F04007EC9D2 /* CoreDataManager.swift */; };
 		80E450C12BB370A4007EC9D2 /* SaveToCacheUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450C02BB370A4007EC9D2 /* SaveToCacheUseCase.swift */; };
 		80E450C32BB3714B007EC9D2 /* FetchFromCacheUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450C22BB3714B007EC9D2 /* FetchFromCacheUseCase.swift */; };
+		80E450D42BB37F85007EC9D2 /* WalletInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450D32BB37F85007EC9D2 /* WalletInteractorTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +87,6 @@
 		80C26B0C2BB1D996007413DC /* EthereumWalletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumWalletUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		80C26B1A2BB1F99B007413DC /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		80C26B1C2BB1F9F9007413DC /* APIManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTest.swift; sourceTree = "<group>"; };
-		80C26B1E2BB1FC97007413DC /* WalletBalanceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletBalanceResponse.swift; sourceTree = "<group>"; };
 		80C26B242BB20F14007413DC /* WalletPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPresenter.swift; sourceTree = "<group>"; };
 		80C26B262BB20F14007413DC /* WalletRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRouter.swift; sourceTree = "<group>"; };
 		80C26B272BB20F14007413DC /* WalletModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModels.swift; sourceTree = "<group>"; };
@@ -119,6 +118,7 @@
 		80E450BE2BB36F04007EC9D2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		80E450C02BB370A4007EC9D2 /* SaveToCacheUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveToCacheUseCase.swift; sourceTree = "<group>"; };
 		80E450C22BB3714B007EC9D2 /* FetchFromCacheUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFromCacheUseCase.swift; sourceTree = "<group>"; };
+		80E450D32BB37F85007EC9D2 /* WalletInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletInteractorTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,16 +170,14 @@
 		80C26AE52BB1D996007413DC /* EthereumWallet */ = {
 			isa = PBXGroup;
 			children = (
-				80E450A32BB327A8007EC9D2 /* Extensions */,
-				80E450972BB31D97007EC9D2 /* UIComponents */,
-				80E450842BB303C0007EC9D2 /* UseCases */,
-				80C26B232BB20EFD007413DC /* Scenes */,
-				80C26B192BB1F91C007413DC /* APIServices */,
+				80E450C82BB37A13007EC9D2 /* Resources */,
+				80E450C72BB37A07007EC9D2 /* Common */,
+				80E450C62BB379FC007EC9D2 /* Data */,
+				80E450C52BB379F1007EC9D2 /* Domain */,
+				80E450C42BB379E3007EC9D2 /* Presentation */,
 				80C26AE62BB1D996007413DC /* AppDelegate.swift */,
 				80C26AE82BB1D996007413DC /* SceneDelegate.swift */,
 				80C26AEA2BB1D996007413DC /* ViewController.swift */,
-				80C26AEC2BB1D996007413DC /* Main.storyboard */,
-				80C26AF22BB1D996007413DC /* Assets.xcassets */,
 				80C26AF42BB1D996007413DC /* LaunchScreen.storyboard */,
 				80C26AF72BB1D996007413DC /* Info.plist */,
 				80C26AEF2BB1D996007413DC /* EthereumWallet.xcdatamodeld */,
@@ -195,6 +193,7 @@
 				80E450892BB30603007EC9D2 /* FetchWalletBalanceUseCaseTest.swift */,
 				80E4508F2BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift */,
 				80E450952BB31857007EC9D2 /* FetchWalletNFTUseCaseTest.swift */,
+				80E450D32BB37F85007EC9D2 /* WalletInteractorTest.swift */,
 			);
 			path = EthereumWalletTests;
 			sourceTree = "<group>";
@@ -206,33 +205,6 @@
 				80C26B0C2BB1D996007413DC /* EthereumWalletUITestsLaunchTests.swift */,
 			);
 			path = EthereumWalletUITests;
-			sourceTree = "<group>";
-		};
-		80C26B192BB1F91C007413DC /* APIServices */ = {
-			isa = PBXGroup;
-			children = (
-				80C26B1A2BB1F99B007413DC /* APIManager.swift */,
-				80C26B1E2BB1FC97007413DC /* WalletBalanceResponse.swift */,
-				80E4508D2BB306FB007EC9D2 /* MockAPIManager.swift */,
-				80E450932BB316F4007EC9D2 /* NFT.swift */,
-				80E450B92BB3695C007EC9D2 /* NetworkManager.swift */,
-				80E450BE2BB36F04007EC9D2 /* CoreDataManager.swift */,
-			);
-			path = APIServices;
-			sourceTree = "<group>";
-		};
-		80C26B232BB20EFD007413DC /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				80E450B22BB35305007EC9D2 /* CollectionViewCells */,
-				80E4509E2BB32771007EC9D2 /* TableViewCells */,
-				80C26B242BB20F14007413DC /* WalletPresenter.swift */,
-				80C26B262BB20F14007413DC /* WalletRouter.swift */,
-				80C26B272BB20F14007413DC /* WalletModels.swift */,
-				80C26B282BB20F14007413DC /* WalletViewController.swift */,
-				80C26B292BB20F14007413DC /* WalletInteractor.swift */,
-			);
-			path = Scenes;
 			sourceTree = "<group>";
 		};
 		80E450842BB303C0007EC9D2 /* UseCases */ = {
@@ -251,8 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				80E450982BB31E7F007EC9D2 /* CustomColor.swift */,
-				80E4509A2BB31FBC007EC9D2 /* CustomFont.swift */,
 				80E4509C2BB32316007EC9D2 /* CustomLabel.swift */,
+				80E4509A2BB31FBC007EC9D2 /* CustomFont.swift */,
 				80E450AC2BB334E5007EC9D2 /* ActivityLoader.swift */,
 			);
 			path = UIComponents;
@@ -269,7 +241,81 @@
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
-		80E450A32BB327A8007EC9D2 /* Extensions */ = {
+		80E450B22BB35305007EC9D2 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				80E450B32BB3531C007EC9D2 /* NFTCollectionViewCell.swift */,
+				80E450B42BB3531C007EC9D2 /* NFTCollectionViewCell.xib */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		80E450C42BB379E3007EC9D2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				80E450CC2BB37AAB007EC9D2 /* Presenter */,
+				80E450972BB31D97007EC9D2 /* UIComponents */,
+				80E450CB2BB37A6D007EC9D2 /* Extensions */,
+				80E450CA2BB37A3A007EC9D2 /* Views */,
+				80E450C92BB37A25007EC9D2 /* ViewControllers */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		80E450C52BB379F1007EC9D2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				80E450D02BB37B87007EC9D2 /* Entities */,
+				80E450842BB303C0007EC9D2 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		80E450C62BB379FC007EC9D2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				80E450CF2BB37B35007EC9D2 /* CoreData */,
+				80E450CE2BB37B06007EC9D2 /* Networking */,
+				80E450CD2BB37AF6007EC9D2 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		80E450C72BB37A07007EC9D2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				80E450D12BB37BC6007EC9D2 /* Router */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		80E450C82BB37A13007EC9D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80C26AF22BB1D996007413DC /* Assets.xcassets */,
+				80C26AEC2BB1D996007413DC /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80E450C92BB37A25007EC9D2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				80C26B282BB20F14007413DC /* WalletViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		80E450CA2BB37A3A007EC9D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80E450B22BB35305007EC9D2 /* CollectionViewCells */,
+				80E4509E2BB32771007EC9D2 /* TableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		80E450CB2BB37A6D007EC9D2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				80E450A42BB327C6007EC9D2 /* UITableView+Extension.swift */,
@@ -279,13 +325,55 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		80E450B22BB35305007EC9D2 /* CollectionViewCells */ = {
+		80E450CC2BB37AAB007EC9D2 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				80E450B32BB3531C007EC9D2 /* NFTCollectionViewCell.swift */,
-				80E450B42BB3531C007EC9D2 /* NFTCollectionViewCell.xib */,
+				80C26B242BB20F14007413DC /* WalletPresenter.swift */,
 			);
-			path = CollectionViewCells;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		80E450CD2BB37AF6007EC9D2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				80C26B292BB20F14007413DC /* WalletInteractor.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		80E450CE2BB37B06007EC9D2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				80C26B1A2BB1F99B007413DC /* APIManager.swift */,
+				80E4508D2BB306FB007EC9D2 /* MockAPIManager.swift */,
+				80E450B92BB3695C007EC9D2 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		80E450CF2BB37B35007EC9D2 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				80E450BE2BB36F04007EC9D2 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		80E450D02BB37B87007EC9D2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				80E450932BB316F4007EC9D2 /* NFT.swift */,
+				80C26B272BB20F14007413DC /* WalletModels.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		80E450D12BB37BC6007EC9D2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				80C26B262BB20F14007413DC /* WalletRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,7 +512,6 @@
 			files = (
 				80E450BA2BB3695C007EC9D2 /* NetworkManager.swift in Sources */,
 				80C26B2D2BB20F14007413DC /* WalletModels.swift in Sources */,
-				80C26B1F2BB1FC97007413DC /* WalletBalanceResponse.swift in Sources */,
 				80E450C32BB3714B007EC9D2 /* FetchFromCacheUseCase.swift in Sources */,
 				80E450B82BB35BD9007EC9D2 /* UIImageView+Extension.swift in Sources */,
 				80E450992BB31E7F007EC9D2 /* CustomColor.swift in Sources */,
@@ -463,6 +550,7 @@
 				80C26B1D2BB1F9F9007413DC /* APIManagerTest.swift in Sources */,
 				80E450962BB31857007EC9D2 /* FetchWalletNFTUseCaseTest.swift in Sources */,
 				80E4508A2BB30603007EC9D2 /* FetchWalletBalanceUseCaseTest.swift in Sources */,
+				80E450D42BB37F85007EC9D2 /* WalletInteractorTest.swift in Sources */,
 				80C26B012BB1D996007413DC /* EthereumWalletTests.swift in Sources */,
 				80E450902BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift in Sources */,
 			);
