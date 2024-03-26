@@ -32,6 +32,9 @@
 		80E4508A2BB30603007EC9D2 /* FetchWalletBalanceUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450892BB30603007EC9D2 /* FetchWalletBalanceUseCaseTest.swift */; };
 		80E4508E2BB306FB007EC9D2 /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4508D2BB306FB007EC9D2 /* MockAPIManager.swift */; };
 		80E450902BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4508F2BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift */; };
+		80E450922BB316DA007EC9D2 /* FetchWalletNFTUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450912BB316DA007EC9D2 /* FetchWalletNFTUseCase.swift */; };
+		80E450942BB316F4007EC9D2 /* NFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450932BB316F4007EC9D2 /* NFT.swift */; };
+		80E450962BB31857007EC9D2 /* FetchWalletNFTUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450952BB31857007EC9D2 /* FetchWalletNFTUseCaseTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,9 @@
 		80E450892BB30603007EC9D2 /* FetchWalletBalanceUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWalletBalanceUseCaseTest.swift; sourceTree = "<group>"; };
 		80E4508D2BB306FB007EC9D2 /* MockAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIManager.swift; sourceTree = "<group>"; };
 		80E4508F2BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTransactionCountUseCaseTest.swift; sourceTree = "<group>"; };
+		80E450912BB316DA007EC9D2 /* FetchWalletNFTUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWalletNFTUseCase.swift; sourceTree = "<group>"; };
+		80E450932BB316F4007EC9D2 /* NFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFT.swift; sourceTree = "<group>"; };
+		80E450952BB31857007EC9D2 /* FetchWalletNFTUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWalletNFTUseCaseTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,7 @@
 				80C26B1C2BB1F9F9007413DC /* APIManagerTest.swift */,
 				80E450892BB30603007EC9D2 /* FetchWalletBalanceUseCaseTest.swift */,
 				80E4508F2BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift */,
+				80E450952BB31857007EC9D2 /* FetchWalletNFTUseCaseTest.swift */,
 			);
 			path = EthereumWalletTests;
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 				80C26B1A2BB1F99B007413DC /* APIManager.swift */,
 				80C26B1E2BB1FC97007413DC /* WalletBalanceResponse.swift */,
 				80E4508D2BB306FB007EC9D2 /* MockAPIManager.swift */,
+				80E450932BB316F4007EC9D2 /* NFT.swift */,
 			);
 			path = APIServices;
 			sourceTree = "<group>";
@@ -203,6 +211,7 @@
 			children = (
 				80E450852BB303F9007EC9D2 /* FetchWalletBalanceUseCase.swift */,
 				80E450872BB3044C007EC9D2 /* FetchTransactionCountUseCase.swift */,
+				80E450912BB316DA007EC9D2 /* FetchWalletNFTUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -342,6 +351,7 @@
 				80C26B1F2BB1FC97007413DC /* WalletBalanceResponse.swift in Sources */,
 				80C26B2A2BB20F14007413DC /* WalletPresenter.swift in Sources */,
 				80C26B212BB2001E007413DC /* String+Extension.swift in Sources */,
+				80E450922BB316DA007EC9D2 /* FetchWalletNFTUseCase.swift in Sources */,
 				80C26AEB2BB1D996007413DC /* ViewController.swift in Sources */,
 				80E450882BB3044C007EC9D2 /* FetchTransactionCountUseCase.swift in Sources */,
 				80C26B2E2BB20F14007413DC /* WalletViewController.swift in Sources */,
@@ -351,6 +361,7 @@
 				80C26AE92BB1D996007413DC /* SceneDelegate.swift in Sources */,
 				80C26AF12BB1D996007413DC /* EthereumWallet.xcdatamodeld in Sources */,
 				80C26B2C2BB20F14007413DC /* WalletRouter.swift in Sources */,
+				80E450942BB316F4007EC9D2 /* NFT.swift in Sources */,
 				80E450862BB303F9007EC9D2 /* FetchWalletBalanceUseCase.swift in Sources */,
 				80C26B2F2BB20F14007413DC /* WalletInteractor.swift in Sources */,
 				80E4508E2BB306FB007EC9D2 /* MockAPIManager.swift in Sources */,
@@ -362,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C26B1D2BB1F9F9007413DC /* APIManagerTest.swift in Sources */,
+				80E450962BB31857007EC9D2 /* FetchWalletNFTUseCaseTest.swift in Sources */,
 				80E4508A2BB30603007EC9D2 /* FetchWalletBalanceUseCaseTest.swift in Sources */,
 				80C26B012BB1D996007413DC /* EthereumWalletTests.swift in Sources */,
 				80E450902BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift in Sources */,
