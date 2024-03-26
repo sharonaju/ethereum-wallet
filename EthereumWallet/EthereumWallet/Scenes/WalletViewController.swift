@@ -14,7 +14,6 @@ import UIKit
 
 protocol WalletDisplayLogic: AnyObject
 {
-  func displaySomething(viewModel: Wallet.Something.ViewModel)
 }
 
 class WalletViewController: UIViewController, WalletDisplayLogic
@@ -72,11 +71,5 @@ class WalletViewController: UIViewController, WalletDisplayLogic
       interactor?.fetchWalletDetails()
   }
   
-  // MARK: Do something
-  
-  //@IBOutlet weak var nameTextField: UITextField!
-  
-    func displaySomething(viewModel: Wallet.Something.ViewModel) {
-        
-    }
+
 }

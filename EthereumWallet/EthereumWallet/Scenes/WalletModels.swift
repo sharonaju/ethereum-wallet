@@ -16,16 +16,10 @@ enum Wallet
 {
   // MARK: Use cases
   
-  enum Something
-  {
-    struct Request
-    {
-    }
     struct Response
     {
+        var walletBalance: String?
+        var transacrtionCount: Int?
+        
     }
-    struct ViewModel
-    {
-    }
-  }
 }

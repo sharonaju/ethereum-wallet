@@ -27,6 +27,11 @@
 		80C26B2D2BB20F14007413DC /* WalletModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B272BB20F14007413DC /* WalletModels.swift */; };
 		80C26B2E2BB20F14007413DC /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B282BB20F14007413DC /* WalletViewController.swift */; };
 		80C26B2F2BB20F14007413DC /* WalletInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26B292BB20F14007413DC /* WalletInteractor.swift */; };
+		80E450862BB303F9007EC9D2 /* FetchWalletBalanceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450852BB303F9007EC9D2 /* FetchWalletBalanceUseCase.swift */; };
+		80E450882BB3044C007EC9D2 /* FetchTransactionCountUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450872BB3044C007EC9D2 /* FetchTransactionCountUseCase.swift */; };
+		80E4508A2BB30603007EC9D2 /* FetchWalletBalanceUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450892BB30603007EC9D2 /* FetchWalletBalanceUseCaseTest.swift */; };
+		80E4508E2BB306FB007EC9D2 /* MockAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4508D2BB306FB007EC9D2 /* MockAPIManager.swift */; };
+		80E450902BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4508F2BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 		80C26B272BB20F14007413DC /* WalletModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModels.swift; sourceTree = "<group>"; };
 		80C26B282BB20F14007413DC /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		80C26B292BB20F14007413DC /* WalletInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletInteractor.swift; sourceTree = "<group>"; };
+		80E450852BB303F9007EC9D2 /* FetchWalletBalanceUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWalletBalanceUseCase.swift; sourceTree = "<group>"; };
+		80E450872BB3044C007EC9D2 /* FetchTransactionCountUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTransactionCountUseCase.swift; sourceTree = "<group>"; };
+		80E450892BB30603007EC9D2 /* FetchWalletBalanceUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWalletBalanceUseCaseTest.swift; sourceTree = "<group>"; };
+		80E4508D2BB306FB007EC9D2 /* MockAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIManager.swift; sourceTree = "<group>"; };
+		80E4508F2BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTransactionCountUseCaseTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +131,7 @@
 		80C26AE52BB1D996007413DC /* EthereumWallet */ = {
 			isa = PBXGroup;
 			children = (
+				80E450842BB303C0007EC9D2 /* UseCases */,
 				80C26B232BB20EFD007413DC /* Scenes */,
 				80C26B222BB20022007413DC /* Extension */,
 				80C26B192BB1F91C007413DC /* APIServices */,
@@ -141,6 +152,8 @@
 			children = (
 				80C26B002BB1D996007413DC /* EthereumWalletTests.swift */,
 				80C26B1C2BB1F9F9007413DC /* APIManagerTest.swift */,
+				80E450892BB30603007EC9D2 /* FetchWalletBalanceUseCaseTest.swift */,
+				80E4508F2BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift */,
 			);
 			path = EthereumWalletTests;
 			sourceTree = "<group>";
@@ -159,6 +172,7 @@
 			children = (
 				80C26B1A2BB1F99B007413DC /* APIManager.swift */,
 				80C26B1E2BB1FC97007413DC /* WalletBalanceResponse.swift */,
+				80E4508D2BB306FB007EC9D2 /* MockAPIManager.swift */,
 			);
 			path = APIServices;
 			sourceTree = "<group>";
@@ -182,6 +196,15 @@
 				80C26B292BB20F14007413DC /* WalletInteractor.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		80E450842BB303C0007EC9D2 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				80E450852BB303F9007EC9D2 /* FetchWalletBalanceUseCase.swift */,
+				80E450872BB3044C007EC9D2 /* FetchTransactionCountUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +343,7 @@
 				80C26B2A2BB20F14007413DC /* WalletPresenter.swift in Sources */,
 				80C26B212BB2001E007413DC /* String+Extension.swift in Sources */,
 				80C26AEB2BB1D996007413DC /* ViewController.swift in Sources */,
+				80E450882BB3044C007EC9D2 /* FetchTransactionCountUseCase.swift in Sources */,
 				80C26B2E2BB20F14007413DC /* WalletViewController.swift in Sources */,
 				80C26AE72BB1D996007413DC /* AppDelegate.swift in Sources */,
 				80C26B1B2BB1F99B007413DC /* APIManager.swift in Sources */,
@@ -327,7 +351,9 @@
 				80C26AE92BB1D996007413DC /* SceneDelegate.swift in Sources */,
 				80C26AF12BB1D996007413DC /* EthereumWallet.xcdatamodeld in Sources */,
 				80C26B2C2BB20F14007413DC /* WalletRouter.swift in Sources */,
+				80E450862BB303F9007EC9D2 /* FetchWalletBalanceUseCase.swift in Sources */,
 				80C26B2F2BB20F14007413DC /* WalletInteractor.swift in Sources */,
+				80E4508E2BB306FB007EC9D2 /* MockAPIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +362,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C26B1D2BB1F9F9007413DC /* APIManagerTest.swift in Sources */,
+				80E4508A2BB30603007EC9D2 /* FetchWalletBalanceUseCaseTest.swift in Sources */,
 				80C26B012BB1D996007413DC /* EthereumWalletTests.swift in Sources */,
+				80E450902BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
