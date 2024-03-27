@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		808BE4562BB4626800D9C8B1 /* NFTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808BE4542BB4626800D9C8B1 /* NFTTableViewCell.swift */; };
+		808BE4572BB4626800D9C8B1 /* NFTTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808BE4552BB4626800D9C8B1 /* NFTTableViewCell.xib */; };
+		808BE45A2BB463B900D9C8B1 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808BE4582BB463B900D9C8B1 /* TitleTableViewCell.swift */; };
+		808BE45B2BB463B900D9C8B1 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808BE4592BB463B900D9C8B1 /* TitleTableViewCell.xib */; };
 		80C26AE72BB1D996007413DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26AE62BB1D996007413DC /* AppDelegate.swift */; };
 		80C26AE92BB1D996007413DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26AE82BB1D996007413DC /* SceneDelegate.swift */; };
 		80C26AEB2BB1D996007413DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C26AEA2BB1D996007413DC /* ViewController.swift */; };
@@ -40,8 +44,6 @@
 		80E450AA2BB32A20007EC9D2 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450A82BB32A20007EC9D2 /* DetailsTableViewCell.swift */; };
 		80E450AB2BB32A20007EC9D2 /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E450A92BB32A20007EC9D2 /* DetailsTableViewCell.xib */; };
 		80E450AD2BB334E5007EC9D2 /* ActivityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450AC2BB334E5007EC9D2 /* ActivityLoader.swift */; };
-		80E450B02BB3522A007EC9D2 /* NFTTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450AE2BB3522A007EC9D2 /* NFTTableViewCell.swift */; };
-		80E450B12BB3522A007EC9D2 /* NFTTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E450AF2BB3522A007EC9D2 /* NFTTableViewCell.xib */; };
 		80E450B52BB3531C007EC9D2 /* NFTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450B32BB3531C007EC9D2 /* NFTCollectionViewCell.swift */; };
 		80E450B62BB3531C007EC9D2 /* NFTCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E450B42BB3531C007EC9D2 /* NFTCollectionViewCell.xib */; };
 		80E450B82BB35BD9007EC9D2 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450B72BB35BD9007EC9D2 /* UIImageView+Extension.swift */; };
@@ -71,6 +73,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		808BE4542BB4626800D9C8B1 /* NFTTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTTableViewCell.swift; sourceTree = "<group>"; };
+		808BE4552BB4626800D9C8B1 /* NFTTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NFTTableViewCell.xib; sourceTree = "<group>"; };
+		808BE4582BB463B900D9C8B1 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		808BE4592BB463B900D9C8B1 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		80C26AE32BB1D996007413DC /* EthereumWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthereumWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C26AE62BB1D996007413DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C26AE82BB1D996007413DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,8 +114,6 @@
 		80E450A82BB32A20007EC9D2 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		80E450A92BB32A20007EC9D2 /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTableViewCell.xib; sourceTree = "<group>"; };
 		80E450AC2BB334E5007EC9D2 /* ActivityLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLoader.swift; sourceTree = "<group>"; };
-		80E450AE2BB3522A007EC9D2 /* NFTTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTTableViewCell.swift; sourceTree = "<group>"; };
-		80E450AF2BB3522A007EC9D2 /* NFTTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NFTTableViewCell.xib; sourceTree = "<group>"; };
 		80E450B32BB3531C007EC9D2 /* NFTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTCollectionViewCell.swift; sourceTree = "<group>"; };
 		80E450B42BB3531C007EC9D2 /* NFTCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NFTCollectionViewCell.xib; sourceTree = "<group>"; };
 		80E450B72BB35BD9007EC9D2 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -235,8 +239,10 @@
 			children = (
 				80E450A82BB32A20007EC9D2 /* DetailsTableViewCell.swift */,
 				80E450A92BB32A20007EC9D2 /* DetailsTableViewCell.xib */,
-				80E450AE2BB3522A007EC9D2 /* NFTTableViewCell.swift */,
-				80E450AF2BB3522A007EC9D2 /* NFTTableViewCell.xib */,
+				808BE4542BB4626800D9C8B1 /* NFTTableViewCell.swift */,
+				808BE4552BB4626800D9C8B1 /* NFTTableViewCell.xib */,
+				808BE4582BB463B900D9C8B1 /* TitleTableViewCell.swift */,
+				808BE4592BB463B900D9C8B1 /* TitleTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -480,12 +486,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80E450B12BB3522A007EC9D2 /* NFTTableViewCell.xib in Resources */,
 				80C26AF62BB1D996007413DC /* LaunchScreen.storyboard in Resources */,
 				80C26AF32BB1D996007413DC /* Assets.xcassets in Resources */,
 				80E450B62BB3531C007EC9D2 /* NFTCollectionViewCell.xib in Resources */,
 				80E450AB2BB32A20007EC9D2 /* DetailsTableViewCell.xib in Resources */,
+				808BE45B2BB463B900D9C8B1 /* TitleTableViewCell.xib in Resources */,
 				80C26AEE2BB1D996007413DC /* Main.storyboard in Resources */,
+				808BE4572BB4626800D9C8B1 /* NFTTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,9 +529,9 @@
 				80E450882BB3044C007EC9D2 /* FetchTransactionCountUseCase.swift in Sources */,
 				80C26B2E2BB20F14007413DC /* WalletViewController.swift in Sources */,
 				80C26AE72BB1D996007413DC /* AppDelegate.swift in Sources */,
+				808BE4562BB4626800D9C8B1 /* NFTTableViewCell.swift in Sources */,
 				80C26B1B2BB1F99B007413DC /* APIManager.swift in Sources */,
 				80E450A52BB327C6007EC9D2 /* UITableView+Extension.swift in Sources */,
-				80E450B02BB3522A007EC9D2 /* NFTTableViewCell.swift in Sources */,
 				80E4509D2BB32316007EC9D2 /* CustomLabel.swift in Sources */,
 				80C26AE92BB1D996007413DC /* SceneDelegate.swift in Sources */,
 				80C26AF12BB1D996007413DC /* EthereumWallet.xcdatamodeld in Sources */,
@@ -535,6 +542,7 @@
 				80E450AD2BB334E5007EC9D2 /* ActivityLoader.swift in Sources */,
 				80E450862BB303F9007EC9D2 /* FetchWalletBalanceUseCase.swift in Sources */,
 				80E450C12BB370A4007EC9D2 /* SaveToCacheUseCase.swift in Sources */,
+				808BE45A2BB463B900D9C8B1 /* TitleTableViewCell.swift in Sources */,
 				80E450A72BB3295A007EC9D2 /* UITableViewCell+Extension.swift in Sources */,
 				80E450BF2BB36F04007EC9D2 /* CoreDataManager.swift in Sources */,
 				80E450B52BB3531C007EC9D2 /* NFTCollectionViewCell.swift in Sources */,

@@ -29,7 +29,7 @@ class FetchWalletNFTsUseCase {
                 let parseResult: Result<[NFT], Error> = self.apiManager.parseResponse(response, parseFunction: self.parseNFTs)
                 switch parseResult {
                 case .success(let nfts):
-                    let firstTenNfts = Array(nfts.prefix(10))
+                    let firstTenNfts = Array(nfts.prefix(5))
                     completion(.success(firstTenNfts))
                 case .failure(let error):
                     completion(.failure(error))

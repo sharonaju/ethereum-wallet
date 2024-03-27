@@ -29,23 +29,16 @@ class WalletPresenter: WalletPresentationLogic
         let transactions = "\(response.transacrtionCount ?? 0)"
         let transactionsCount = DetailsTableViewCell.Presentable(title: "Total Transactions", description: transactions)
         snapShot.appendItems([addressModel, balanceModel, transactionsCount])
+        let title = TitleTableViewCell.Presentable(title: "NFTs")
+        snapShot.appendItems([title])
         if let nfts = response.nfts {
-            let nftModels = prepareNFTModels(nfts: nfts)
-            snapShot.appendItems([nftModels])
+            for item in nfts {
+                let imageURL = item.metadata?["image"] as? String
+                let model = NFTTableViewCell.Presentable(nftImageURLString: imageURL, title: item.title, tokenId: item.tokenId)
+                snapShot.appendItems([model])
+            }
         }
         viewController?.displayWalletDetails(snapShot)
     }
-    
-    private func prepareNFTModels(nfts: [NFT]) -> NFTTableViewCell.Presentable{
-        var nftPresentable = [NFTCollectionViewCell.Presentable]()
-        for item in nfts {
-            let imageURL = item.metadata?["image"] as? String
-            let model = NFTCollectionViewCell.Presentable(imageURL: imageURL, title: item.title)
-            nftPresentable.append(model)
-        }
-        let nftCellModel = NFTTableViewCell.Presentable(nfts: nftPresentable)
-        return nftCellModel
-    }
-  
  
 }

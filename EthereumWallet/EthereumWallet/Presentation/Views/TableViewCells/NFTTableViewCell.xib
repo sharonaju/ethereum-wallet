@@ -9,67 +9,56 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="NFTTableViewCell" customModule="EthereumWallet" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="523"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NFTTableViewCell" customModule="EthereumWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="523"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fy8-vi-yAC">
-                        <rect key="frame" x="16" y="16" width="288" height="491"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="biM-4P-xga">
+                        <rect key="frame" x="16" y="8" width="288" height="68"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azI-ib-MzF" customClass="CustomLabel" customModule="EthereumWallet" customModuleProvider="target">
-                                <rect key="frame" x="16" y="8" width="256" height="1"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GIz-Dw-YhP">
+                                <rect key="frame" x="24" y="9" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="DmR-tT-UbQ"/>
+                                    <constraint firstAttribute="width" secondItem="GIz-Dw-YhP" secondAttribute="height" multiplier="1:1" id="tP7-oM-zC8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBc-k5-f5Y" customClass="CustomLabel" customModule="EthereumWallet" customModuleProvider="target">
+                                <rect key="frame" x="82" y="24" width="190" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="j32-wC-x5v">
-                                <rect key="frame" x="0.0" y="25" width="288" height="450"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="450" id="6fT-DH-Q7V"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3sX-68-gR4">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <connections>
-                                    <outlet property="dataSource" destination="KGk-i7-Jjw" id="9zN-NQ-HBO"/>
-                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="dWe-dp-wYB"/>
-                                </connections>
-                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="j32-wC-x5v" secondAttribute="bottom" constant="16" id="5RD-zv-rZE"/>
-                            <constraint firstItem="j32-wC-x5v" firstAttribute="leading" secondItem="fy8-vi-yAC" secondAttribute="leading" id="DeJ-IH-rwc"/>
-                            <constraint firstAttribute="trailing" secondItem="j32-wC-x5v" secondAttribute="trailing" id="IkR-8b-Yc0"/>
-                            <constraint firstAttribute="trailing" secondItem="azI-ib-MzF" secondAttribute="trailing" constant="16" id="Ook-z5-QX9"/>
-                            <constraint firstItem="j32-wC-x5v" firstAttribute="top" secondItem="azI-ib-MzF" secondAttribute="bottom" constant="16" id="TN3-tG-YyQ"/>
-                            <constraint firstItem="azI-ib-MzF" firstAttribute="top" secondItem="fy8-vi-yAC" secondAttribute="top" constant="8" id="YCe-3K-S5N"/>
-                            <constraint firstItem="azI-ib-MzF" firstAttribute="leading" secondItem="fy8-vi-yAC" secondAttribute="leading" constant="16" id="rL1-tY-sTP"/>
+                            <constraint firstAttribute="bottom" secondItem="GIz-Dw-YhP" secondAttribute="bottom" constant="9" id="05N-Cf-yVX"/>
+                            <constraint firstItem="GIz-Dw-YhP" firstAttribute="top" secondItem="biM-4P-xga" secondAttribute="top" constant="9" id="3Vt-EK-Fxe"/>
+                            <constraint firstItem="GIz-Dw-YhP" firstAttribute="leading" secondItem="biM-4P-xga" secondAttribute="leading" constant="24" id="Cd9-gg-nFc"/>
+                            <constraint firstAttribute="trailing" secondItem="pBc-k5-f5Y" secondAttribute="trailing" constant="16" id="kmZ-UT-y1Q"/>
+                            <constraint firstItem="pBc-k5-f5Y" firstAttribute="centerY" secondItem="GIz-Dw-YhP" secondAttribute="centerY" id="p1M-Sb-mgh"/>
+                            <constraint firstItem="pBc-k5-f5Y" firstAttribute="leading" secondItem="GIz-Dw-YhP" secondAttribute="trailing" constant="8" id="uKC-Kc-498"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="fy8-vi-yAC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="aic-lm-75M"/>
-                    <constraint firstAttribute="trailing" secondItem="fy8-vi-yAC" secondAttribute="trailing" constant="16" id="hbq-eP-v21"/>
-                    <constraint firstAttribute="bottom" secondItem="fy8-vi-yAC" secondAttribute="bottom" constant="16" id="mvQ-rw-dkR"/>
-                    <constraint firstItem="fy8-vi-yAC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="z0J-S4-cGf"/>
+                    <constraint firstItem="biM-4P-xga" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="5e8-ke-c5Y"/>
+                    <constraint firstItem="biM-4P-xga" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="mId-Pb-lth"/>
+                    <constraint firstAttribute="bottom" secondItem="biM-4P-xga" secondAttribute="bottom" constant="8" id="qzO-VG-p2S"/>
+                    <constraint firstAttribute="trailing" secondItem="biM-4P-xga" secondAttribute="trailing" constant="16" id="rde-HL-jeR"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="bgView" destination="fy8-vi-yAC" id="D9n-V0-Mc6"/>
-                <outlet property="collectionView" destination="j32-wC-x5v" id="7CE-Ih-sPz"/>
-                <outlet property="titleLabel" destination="azI-ib-MzF" id="nFu-Hp-Ho6"/>
+                <outlet property="bgView" destination="biM-4P-xga" id="5OF-bX-dno"/>
+                <outlet property="nftImageView" destination="GIz-Dw-YhP" id="MJp-HN-1iP"/>
+                <outlet property="titleLabel" destination="pBc-k5-f5Y" id="uBu-Pl-v9g"/>
             </connections>
-            <point key="canvasLocation" x="90" y="20"/>
+            <point key="canvasLocation" x="10" y="21"/>
         </tableViewCell>
     </objects>
 </document>
