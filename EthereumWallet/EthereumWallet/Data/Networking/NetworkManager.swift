@@ -6,11 +6,15 @@
 //
 import Network
 
+import Network
+
 class NetworkManager {
     static let shared = NetworkManager()
     
     let monitor: NWPathMonitor
     private let queue = DispatchQueue.global(qos: .background)
+    private(set) var isMonitoringStarted: Bool = false
+    var currentPathStatus: NWPath.Status = .unsatisfied
     
     private init() {
         monitor = NWPathMonitor()
@@ -18,7 +22,9 @@ class NetworkManager {
     
     func startMonitoring() {
         monitor.start(queue: queue)
-        monitor.pathUpdateHandler = { path in
+        isMonitoringStarted = true
+        monitor.pathUpdateHandler = { [weak self] path in
+            self?.currentPathStatus = path.status
             if path.status == .satisfied {
                 print("Internet connection is available")
             } else {
@@ -29,6 +35,6 @@ class NetworkManager {
     
     func stopMonitoring() {
         monitor.cancel()
+        isMonitoringStarted = false
     }
 }
-

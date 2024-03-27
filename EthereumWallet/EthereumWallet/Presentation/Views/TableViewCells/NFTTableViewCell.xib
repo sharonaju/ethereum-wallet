@@ -20,14 +20,14 @@
                         <rect key="frame" x="16" y="8" width="288" height="68"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GIz-Dw-YhP">
-                                <rect key="frame" x="24" y="9" width="50" height="50"/>
+                                <rect key="frame" x="16" y="9" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="DmR-tT-UbQ"/>
-                                    <constraint firstAttribute="width" secondItem="GIz-Dw-YhP" secondAttribute="height" multiplier="1:1" id="tP7-oM-zC8"/>
+                                    <constraint firstAttribute="width" constant="50" id="XsJ-T2-TCA"/>
+                                    <constraint firstAttribute="height" constant="50" id="hCq-Tg-5Ze"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBc-k5-f5Y" customClass="CustomLabel" customModule="EthereumWallet" customModuleProvider="target">
-                                <rect key="frame" x="82" y="24" width="190" height="20.333333333333329"/>
+                                <rect key="frame" x="74" y="24" width="198" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,7 +37,7 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="GIz-Dw-YhP" secondAttribute="bottom" constant="9" id="05N-Cf-yVX"/>
                             <constraint firstItem="GIz-Dw-YhP" firstAttribute="top" secondItem="biM-4P-xga" secondAttribute="top" constant="9" id="3Vt-EK-Fxe"/>
-                            <constraint firstItem="GIz-Dw-YhP" firstAttribute="leading" secondItem="biM-4P-xga" secondAttribute="leading" constant="24" id="Cd9-gg-nFc"/>
+                            <constraint firstItem="GIz-Dw-YhP" firstAttribute="leading" secondItem="biM-4P-xga" secondAttribute="leading" constant="16" id="Cd9-gg-nFc"/>
                             <constraint firstAttribute="trailing" secondItem="pBc-k5-f5Y" secondAttribute="trailing" constant="16" id="kmZ-UT-y1Q"/>
                             <constraint firstItem="pBc-k5-f5Y" firstAttribute="centerY" secondItem="GIz-Dw-YhP" secondAttribute="centerY" id="p1M-Sb-mgh"/>
                             <constraint firstItem="pBc-k5-f5Y" firstAttribute="leading" secondItem="GIz-Dw-YhP" secondAttribute="trailing" constant="8" id="uKC-Kc-498"/>

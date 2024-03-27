@@ -13,9 +13,7 @@
 import UIKit
 
 enum Wallet
-{
-  // MARK: Use cases
-  
+{  
     struct Response
     {
         var walletAddress: String?

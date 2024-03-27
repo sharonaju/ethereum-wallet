@@ -35,7 +35,6 @@
 		80E450902BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4508F2BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift */; };
 		80E450922BB316DA007EC9D2 /* FetchWalletNFTUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450912BB316DA007EC9D2 /* FetchWalletNFTUseCase.swift */; };
 		80E450942BB316F4007EC9D2 /* NFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450932BB316F4007EC9D2 /* NFT.swift */; };
-		80E450962BB31857007EC9D2 /* FetchWalletNFTUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450952BB31857007EC9D2 /* FetchWalletNFTUseCaseTest.swift */; };
 		80E450992BB31E7F007EC9D2 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450982BB31E7F007EC9D2 /* CustomColor.swift */; };
 		80E4509B2BB31FBC007EC9D2 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4509A2BB31FBC007EC9D2 /* CustomFont.swift */; };
 		80E4509D2BB32316007EC9D2 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E4509C2BB32316007EC9D2 /* CustomLabel.swift */; };
@@ -44,15 +43,12 @@
 		80E450AA2BB32A20007EC9D2 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450A82BB32A20007EC9D2 /* DetailsTableViewCell.swift */; };
 		80E450AB2BB32A20007EC9D2 /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E450A92BB32A20007EC9D2 /* DetailsTableViewCell.xib */; };
 		80E450AD2BB334E5007EC9D2 /* ActivityLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450AC2BB334E5007EC9D2 /* ActivityLoader.swift */; };
-		80E450B52BB3531C007EC9D2 /* NFTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450B32BB3531C007EC9D2 /* NFTCollectionViewCell.swift */; };
-		80E450B62BB3531C007EC9D2 /* NFTCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80E450B42BB3531C007EC9D2 /* NFTCollectionViewCell.xib */; };
 		80E450B82BB35BD9007EC9D2 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450B72BB35BD9007EC9D2 /* UIImageView+Extension.swift */; };
 		80E450BA2BB3695C007EC9D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450B92BB3695C007EC9D2 /* NetworkManager.swift */; };
 		80E450BD2BB36B8F007EC9D2 /* Wallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80E450BB2BB36B8F007EC9D2 /* Wallet.xcdatamodeld */; };
 		80E450BF2BB36F04007EC9D2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450BE2BB36F04007EC9D2 /* CoreDataManager.swift */; };
 		80E450C12BB370A4007EC9D2 /* SaveToCacheUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450C02BB370A4007EC9D2 /* SaveToCacheUseCase.swift */; };
 		80E450C32BB3714B007EC9D2 /* FetchFromCacheUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450C22BB3714B007EC9D2 /* FetchFromCacheUseCase.swift */; };
-		80E450D42BB37F85007EC9D2 /* WalletInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E450D32BB37F85007EC9D2 /* WalletInteractorTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +101,6 @@
 		80E4508F2BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTransactionCountUseCaseTest.swift; sourceTree = "<group>"; };
 		80E450912BB316DA007EC9D2 /* FetchWalletNFTUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWalletNFTUseCase.swift; sourceTree = "<group>"; };
 		80E450932BB316F4007EC9D2 /* NFT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFT.swift; sourceTree = "<group>"; };
-		80E450952BB31857007EC9D2 /* FetchWalletNFTUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWalletNFTUseCaseTest.swift; sourceTree = "<group>"; };
 		80E450982BB31E7F007EC9D2 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		80E4509A2BB31FBC007EC9D2 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		80E4509C2BB32316007EC9D2 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
@@ -114,15 +109,12 @@
 		80E450A82BB32A20007EC9D2 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		80E450A92BB32A20007EC9D2 /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsTableViewCell.xib; sourceTree = "<group>"; };
 		80E450AC2BB334E5007EC9D2 /* ActivityLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLoader.swift; sourceTree = "<group>"; };
-		80E450B32BB3531C007EC9D2 /* NFTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFTCollectionViewCell.swift; sourceTree = "<group>"; };
-		80E450B42BB3531C007EC9D2 /* NFTCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NFTCollectionViewCell.xib; sourceTree = "<group>"; };
 		80E450B72BB35BD9007EC9D2 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		80E450B92BB3695C007EC9D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		80E450BC2BB36B8F007EC9D2 /* Wallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wallet.xcdatamodel; sourceTree = "<group>"; };
 		80E450BE2BB36F04007EC9D2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		80E450C02BB370A4007EC9D2 /* SaveToCacheUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveToCacheUseCase.swift; sourceTree = "<group>"; };
 		80E450C22BB3714B007EC9D2 /* FetchFromCacheUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFromCacheUseCase.swift; sourceTree = "<group>"; };
-		80E450D32BB37F85007EC9D2 /* WalletInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletInteractorTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,10 +170,10 @@
 				80E450C72BB37A07007EC9D2 /* Common */,
 				80E450C62BB379FC007EC9D2 /* Data */,
 				80E450C52BB379F1007EC9D2 /* Domain */,
-				80E450C42BB379E3007EC9D2 /* Presentation */,
 				80C26AE62BB1D996007413DC /* AppDelegate.swift */,
 				80C26AE82BB1D996007413DC /* SceneDelegate.swift */,
 				80C26AEA2BB1D996007413DC /* ViewController.swift */,
+				80E450C42BB379E3007EC9D2 /* Presentation */,
 				80C26AF42BB1D996007413DC /* LaunchScreen.storyboard */,
 				80C26AF72BB1D996007413DC /* Info.plist */,
 				80C26AEF2BB1D996007413DC /* EthereumWallet.xcdatamodeld */,
@@ -196,8 +188,6 @@
 				80C26B1C2BB1F9F9007413DC /* APIManagerTest.swift */,
 				80E450892BB30603007EC9D2 /* FetchWalletBalanceUseCaseTest.swift */,
 				80E4508F2BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift */,
-				80E450952BB31857007EC9D2 /* FetchWalletNFTUseCaseTest.swift */,
-				80E450D32BB37F85007EC9D2 /* WalletInteractorTest.swift */,
 			);
 			path = EthereumWalletTests;
 			sourceTree = "<group>";
@@ -245,15 +235,6 @@
 				808BE4592BB463B900D9C8B1 /* TitleTableViewCell.xib */,
 			);
 			path = TableViewCells;
-			sourceTree = "<group>";
-		};
-		80E450B22BB35305007EC9D2 /* CollectionViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				80E450B32BB3531C007EC9D2 /* NFTCollectionViewCell.swift */,
-				80E450B42BB3531C007EC9D2 /* NFTCollectionViewCell.xib */,
-			);
-			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 		80E450C42BB379E3007EC9D2 /* Presentation */ = {
@@ -315,7 +296,6 @@
 		80E450CA2BB37A3A007EC9D2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				80E450B22BB35305007EC9D2 /* CollectionViewCells */,
 				80E4509E2BB32771007EC9D2 /* TableViewCells */,
 			);
 			path = Views;
@@ -488,7 +468,6 @@
 			files = (
 				80C26AF62BB1D996007413DC /* LaunchScreen.storyboard in Resources */,
 				80C26AF32BB1D996007413DC /* Assets.xcassets in Resources */,
-				80E450B62BB3531C007EC9D2 /* NFTCollectionViewCell.xib in Resources */,
 				80E450AB2BB32A20007EC9D2 /* DetailsTableViewCell.xib in Resources */,
 				808BE45B2BB463B900D9C8B1 /* TitleTableViewCell.xib in Resources */,
 				80C26AEE2BB1D996007413DC /* Main.storyboard in Resources */,
@@ -545,7 +524,6 @@
 				808BE45A2BB463B900D9C8B1 /* TitleTableViewCell.swift in Sources */,
 				80E450A72BB3295A007EC9D2 /* UITableViewCell+Extension.swift in Sources */,
 				80E450BF2BB36F04007EC9D2 /* CoreDataManager.swift in Sources */,
-				80E450B52BB3531C007EC9D2 /* NFTCollectionViewCell.swift in Sources */,
 				80C26B2F2BB20F14007413DC /* WalletInteractor.swift in Sources */,
 				80E4508E2BB306FB007EC9D2 /* MockAPIManager.swift in Sources */,
 			);
@@ -556,9 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C26B1D2BB1F9F9007413DC /* APIManagerTest.swift in Sources */,
-				80E450962BB31857007EC9D2 /* FetchWalletNFTUseCaseTest.swift in Sources */,
 				80E4508A2BB30603007EC9D2 /* FetchWalletBalanceUseCaseTest.swift in Sources */,
-				80E450D42BB37F85007EC9D2 /* WalletInteractorTest.swift in Sources */,
 				80C26B012BB1D996007413DC /* EthereumWalletTests.swift in Sources */,
 				80E450902BB313A0007EC9D2 /* FetchTransactionCountUseCaseTest.swift in Sources */,
 			);
